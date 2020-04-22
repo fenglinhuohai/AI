@@ -5,4 +5,6 @@
 * [Tensorflow基础用法](tensorflowji-chu-yong-fa.md)
 * [ACM](acm.md)
   * [C/C++基础](acm/ccji-chu.md)
+  * [杭电题](acm/hang-dian-ti.md)
+    * [1001-Sum Problem](acm/hang-dian-ti/1001-sum-problem.md)
 
