@@ -37,7 +37,37 @@ int main(){
 }
 ```
 
+例3 aabb问题，aabb是完全平方数，且具有aabb格式
 
+```
+#include<stdio.h>
+#include<math.h>
+int main(){
+    for(int a = 1;a <= 9;a++){
+        for(int b = 1;b <= 9;b++){
+            int n = 1100 * a + 11 * b;
+            // int m = floor(sqrt(n) + 0.5);
+            int m = sqrt(n);
+            if(n == m * m){
+                printf("%d\n",n);
+            }
+        }
+    }
+
+    for(int i = 1;;i++){
+        int n = i * i;
+        if(n < 1000)
+            continue;
+        if(n > 9999)
+            break;
+        int ho = n / 100;
+        int lo = n % 100;
+        if(ho / 10 == ho % 10 && lo / 10 == lo % 10)
+            printf("%d\n",n);
+    }
+    return 0;
+}
+```
 
 
 
