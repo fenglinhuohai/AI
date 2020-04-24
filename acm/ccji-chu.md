@@ -12,3 +12,35 @@ EOF:End of File，在studio.h文件中，定义为\#define EOF \(-1\)，scanf函
 
 window下：ctrl+z结束输入，linux下：ctrl+d结束输入
 
+4、重定向输入输出框架：
+
+```
+#include<stdio.h>
+#include<limits.h>
+#define LOCAL
+// 输入一些数字，求出这些数字的最小值，最大值，平均值。
+int main(){
+    #ifdef LOCAL
+    freopen("data.in","r",stdin);
+    freopen("data.out","w",stdout);
+    #endif // LOCAL
+    int a[1024],tmp;
+    int max = INT_MIN,min = INT_MAX,n = 0;
+    float sum = 0;
+    while(scanf("%d",&tmp) == 1){
+        a[n++] = tmp;
+        sum += tmp;
+        if(max < tmp)
+            max = tmp;
+        if(min > tmp)
+            min = tmp;
+    }
+    printf("最小值:%d\n",min);
+    printf("最大值:%d\n",max);
+    printf("平均值:%.2f\n",sum / n);
+    return 0;
+}
+```
+
+
+
