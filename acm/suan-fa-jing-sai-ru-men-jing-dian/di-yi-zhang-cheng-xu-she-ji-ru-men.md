@@ -71,5 +71,28 @@ int main(){
 
 例4 开灯问题，n盏灯，1～n，第一个人把所有灯打开，第二个人按下所有为2倍数的灯，第三个人按下所有3倍数的灯，一共k个人，问，最后哪些灯开着？
 
+```
+#include<stdio.h>
+#include<string.h>
+#define MAXN 1000
+int lamp[MAXN];
+int main(){
+    int n,k;
+    memset(lamp,0,sizeof(lamp));
+    scanf("%d%d",&n,&k);
+    for(int i = 1;i <= k;i++){
+        for(int j = 1;j <= n;j++){
+            if(j % i == 0)
+                lamp[j] = !lamp[j];
+        }
+    }
+    for(int i = 1;i <= n;i++)
+        if(lamp[i])
+            printf("%d ",i);
+    printf("\n");
+    return 0;
+}
+```
+
 
 
