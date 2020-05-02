@@ -57,7 +57,9 @@ int main(){
 }
 ```
 
-5、文件输入输出、重定向输入输出框架：
+5、c语言中getchar：
+
+[https://blog.csdn.net/meidong52617/article/details/44728517](https://blog.csdn.net/meidong52617/article/details/44728517)
 
 
 
