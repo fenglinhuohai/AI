@@ -9,4 +9,5 @@
     * [第一章 程序设计入门](acm/suan-fa-jing-sai-ru-men-jing-dian/di-yi-zhang-cheng-xu-she-ji-ru-men.md)
   * [杭电题](acm/hang-dian-ti.md)
     * [1001-Sum Problem](acm/hang-dian-ti/1001-sum-problem.md)
+* [C/C++少儿编程课程设计](ccshao-er-bian-cheng-ke-cheng-she-ji.md)
 
